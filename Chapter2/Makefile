@@ -23,7 +23,7 @@ $(ODIR)/%.o: %.cpp
 all: Chapter2
 
 Chapter2: $(OBJS)
-	$(CXX) $(LDFLAGS) -o tool $(OBJS) $(LDLIBS)
+	$(CXX) $(LDFLAGS) -o $@ $(OBJS) $(LDLIBS)
 
 depend: .depend
 
